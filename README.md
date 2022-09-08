@@ -1,5 +1,7 @@
 # Registration Form
 
+Live preview: https://felipesousac.github.io/registration-form/
+
 <img src="./img/registration-print.PNG" alt="Project print">
 
 
