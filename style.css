@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-smooth: always;
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+body {
+  display: flex;
+}
+
+/* LEFT SIDE*/
+
+.left-side {
+  background: url('./img/halie.jpg') center no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2.2rem;
+
+  margin-top: 200px;
+  padding-block: 15px;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo-container img {
+  width: 100px;
+  height: auto;
+}
+
+/*RIGHT SIDE*/
+.right-side {
+  width: 65%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: sans-serif;
+}
+
+.message-container {
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  margin-top: 150px;
+  margin-bottom: 30px;
+  padding-left: 40px;
+}
+
+.message-container div {
+  max-width: 750px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-block: 25px;
+  padding-left: 40px;
+}
+
+.first div,
+.second div,
+.third div {
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  padding-left: 40px;
+}
+
+.user-data {
+  border-block: 1px solid rgba(128, 128, 128, 0.13);
+  box-shadow: 0 8px 10px -10px rgb(128, 128, 128);
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 8px 10px -10px rgb(128, 128, 128);
+}
+
+.links {
+  padding-left: 40px;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #596d48;
+  border: none;
+  border-radius: 8px;
+  color: white;
+
+  width: 220px;
+  height: 50px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  margin-bottom: 30px;
+
+  transition: filter 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+.error-message {
+  display: none;
+  font-size: 0.8rem;
+  color: red;
+}
+
+/*HIDE ARROWS FROM NUMBER INPUT*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
